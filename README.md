@@ -1,6 +1,6 @@
 **NCHRP 17-102 New Exposure and Crash Prediction Models for Pedestrian and Bicyclist Safety**
 
-**Authors:** Dr. Rebecca Sanders, Dr. Darren Torbic, Dr. Srinivas Geedipally, Dr. Bahar Dadashova, Dr. Okan Gurbuz, Dr. Lingtao Wu, Mr. Mike Pratt, Ms. Emma Turner, Dr. Vikash Gayah, Dr. Ilgin Guler, Dr. Jessica Schoner, and Mr. Brian Almdale
+**Authors:** Dr. Darren Torbic, Dr. Srinivas Geedipally, Dr. Bahar Dadashova, Dr. Okan Gurbuz, Dr. Lingtao Wu, Mr. Mike Pratt, Ms. Emma Turner, Dr. Vikash Gayah, Dr. Ilgin Guler, Dr. Rebecca Sanders, Dr. Jessica Schoner, and Mr. Brian Almdale
 
 **Summary**
 
@@ -73,7 +73,6 @@ The pedestrian segment database had sufficient data to develop a model for pedes
 - The pedestrian segment KA model again found a significant, positive correlation with both motorist and pedestrian volumes and with the presence of a signalized intersection on both ends of the segment. Sidewalks were similarly negatively associated with pedestrian KA crashes, underscoring their value as a key countermeasure.
 - The pedestrian nighttime segment model found a significant and positive association with higher numbers of lanes (compared to three lanes) and with higher motorist and pedestrian volumes (AADT and ADP), respectively.
 
-
 _Intersections_
 
 - For signalized intersections (looking only at four-leg intersections of a two-way street and a one-way street (4SG 1x2) and three-leg intersections of two two-way streets (3SG 2x2)):
@@ -113,8 +112,6 @@ _Intersections_
 - For stop-controlled intersections (looking only at three-leg and four-leg intersections of two two-way streets (3ST 2x2 and 4ST 2x2, respectively):
   - Higher average bicycle volumes are associated with higher bicycle crash numbers.
 
-
-
 **Conclusions**
 
 This research project provided important guidance and tools to help transportation agencies and practitioners apply advanced predictive models to inform multimodal decision-making. The pedestrian and bicycle exposure models developed for this research enable transportation agencies that lack comprehensive pedestrian and bicycle count programs to estimate pedestrian and bicycle volumes along urban and suburban roadways and intersections. These exposure estimates can then be used as inputs to the pedestrian and bicycle crash prediction models planned for the urban and suburban arterial chapter of HSM2 to allow for informed, data-driven decisions of design alternatives. The pedestrian and bicycle volume estimates can also be used with other pedestrian and bicycle crash prediction models, such as those presented in the guidebook or developed for a particular city or state, within the similar HSM predictive methodology.
@@ -125,22 +122,21 @@ Torbic. D., S. Geedipally, B. Dadashova, O. Gurbuz, L. Wu, M. Pratt, E. Turner, 
 
 Torbic. D., S. Geedipally, B. Dadashova, O. Gurbuz, L. Wu, M. Pratt, E. Turner, V. Gayah, I. Guler, R. Sanders, B. Almdale, and J. Schoner. (2026). _Safety Performance for Active Transportation Modes Using Exposure Models: Guide_. National Cooperative Highway Research Program.
 
-
 **Structure of this Repository**
 
 This repository contains source scripts and data for developing the models.
+
 - **scripts/**: Contains the analysis scripts for modeling.
 - **data/**: Contains the datasets. Raw_Data_and_Dictionary inlucdes raw data along with data dictionary; Modeling_Data includes data used by the modeling scripts.
-
 
 **Usage**
 
 ```sh
 # Exposure Models
-# Bicycle
-Rscript ./scripts/Exposure_Models/exposure_bicycle.R
 # Pedestrian
-sas ./scripts/Exposure_Models/exposure_pedestrian.sas 
+sas ./scripts/Exposure_Models/exposure_pedestrian.sas
+# Bicycle  Note: The bicycle exposure model requires R-Studio, it cannot be executed directly in terminal.
+./scripts/Exposure_Models/exposure_bicycle.R
 
 # Crash Prediction Models
 # Bicycle Intersection
@@ -155,4 +151,3 @@ sas ./scripts/Crash_Prediction_Models/crash_pedestrian_segment_3T_5T_7T.sas
 # Pedestrian Segment 6U 6D and 8D
 sas ./scripts/Crash_Prediction_Models/crash_pedestrian_segment_6U_6D_8D.sas
 ```
-
