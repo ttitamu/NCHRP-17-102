@@ -7,7 +7,7 @@ require(boot)
 
 # Read segment file --------------------
 
-df <- read.csv("data/Modeling_Data/Segment_SPF_data.csv", header = T)
+df <- read.csv("data/Modeling_Data/crash_segment_data.csv", header = T)
 # Define or relevel new variables
 
 df$lanew <- ((df$lane_width_nw + df$lane_width_se) / 2) - 12

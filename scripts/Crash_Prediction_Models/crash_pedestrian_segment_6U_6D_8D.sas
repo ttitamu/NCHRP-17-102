@@ -1,6 +1,6 @@
 
 PROC IMPORT OUT=WORK.seg_1
-     DATAFILE="Data\Modeling_Data\Segment_SPF_data.csv";
+     DATAFILE="Data\Modeling_Data\crash_segment_data.csv";
 RUN;
 
 

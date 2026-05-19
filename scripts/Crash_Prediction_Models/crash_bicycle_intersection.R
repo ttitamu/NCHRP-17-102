@@ -26,7 +26,7 @@ library(dplyr)
 # setwd(dirname(rstudioapi::getActiveDocumentContext()$path))ß
 rm(list=ls())
 gc()
-data<-read.csv("data/Modeling_Data/intersection_processed.csv", header=TRUE, stringsAsFactors=FALSE)
+data<-read.csv("data/Modeling_Data/crash_intersection_data.csv", header=TRUE, stringsAsFactors=FALSE)
 summary(data)
 names(data) = tolower(names(data))
 

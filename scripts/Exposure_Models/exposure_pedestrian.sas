@@ -1,6 +1,6 @@
 
 PROC IMPORT OUT=WORK.all
-     DATAFILE="data\Modleing_Data\TTI_All_Cities_WithinStudyTimePeriod_Updated_XG_07282025.xlsx"
+     DATAFILE="data\Modleing_Data\exposure_model_data.xlsx"
 	          DBMS=EXCEL2010 REPLACE;
 			  SHEET='PED_ONLY_TRIM';
 			  RANGE="A1:ES1709";

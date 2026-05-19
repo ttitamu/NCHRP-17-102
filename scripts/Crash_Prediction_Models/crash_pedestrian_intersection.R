@@ -5,7 +5,7 @@ library(readr)
 library(tidyverse)
 
 # load intersection data file
-df <- read_csv('data/Modeling_Data/intersection_processed.csv')
+df <- read_csv('data/Modeling_Data/crash_intersection_data.csv')
 
 # define new variables
 df <- df %>% 

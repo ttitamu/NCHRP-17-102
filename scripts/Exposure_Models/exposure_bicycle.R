@@ -88,7 +88,7 @@ elasticity_combined <- function(model, data) {
 
 # import file
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-file_path <- "../../data/Modeling_Data/TTI_All_Cities_WithinStudyTimePeriod_Updated_XG_07282025.xlsx"
+file_path <- "../../data/Modeling_Data/exposure_model_data.xlsx"
 
 # read bike sheet
 Bike <- read_xlsx(file_path, sheet = "CYC_ONLY", col_types = "text")
@@ -227,8 +227,7 @@ summary(bike_exposure)
 
 data$pred_bike <- exp(predict(bike_exposure, data))
 
-write.csv(data, "../../data/Modeling_Data/bike_modeling_data.csv", row.names = FALSE)
-
+# write.csv(data, "../../data/Modeling_Data/bike_modeling_data.csv", row.names = FALSE)
 
 data_withhold <- subset(data, PA == 1)
 data_model <- subset(data, PA == 0)
