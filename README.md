@@ -17,24 +17,30 @@ This repository contains source scripts and data for developing the models.
 
 ```sh
 # Exposure Models
+
 # Pedestrian
 sas ./scripts/Exposure_Models/exposure_pedestrian.sas
+
 # Bicycle
 # Note: The bicycle exposure model requires R-Studio, it cannot be executed directly in terminal.
 # Rscript ./scripts/Exposure_Models/exposure_bicycle.R
 
 # Crash Prediction Models
-# Bicycle Intersection
-Rscript ./scripts/Crash_Prediction_Models/crash_bicycle_intersection.R
-# Bicycle Segment
-Rscript ./scripts/Crash_Prediction_Models/crash_bicycle_segment.R
-#
-# Pedestrian Intersection
-Rscript ./scripts/Crash_Prediction_Models/crash_pedestrian_intersection.R
+
+# Segments
 # Pedestrian Segment 3T 5T and 7T
 sas ./scripts/Crash_Prediction_Models/crash_pedestrian_segment_3T_5T_7T.sas
 # Pedestrian Segment 6U 6D and 8D
 sas ./scripts/Crash_Prediction_Models/crash_pedestrian_segment_6U_6D_8D.sas
+# Bicycle Segment
+Rscript ./scripts/Crash_Prediction_Models/crash_bicycle_segment.R
+
+# Intersections
+# Pedestrian Intersection
+Rscript ./scripts/Crash_Prediction_Models/crash_pedestrian_intersection.R
+# Bicycle Intersection
+Rscript ./scripts/Crash_Prediction_Models/crash_bicycle_intersection.R
+
 ```
 
 **Liability**
