@@ -1,6 +1,4 @@
-**NCHRP 17-102 New Exposure and Crash Prediction Models for Pedestrian and Bicyclist Safety**
-
-**Authors:** Dr. Darren Torbic, Dr. Srinivas Geedipally, Dr. Bahar Dadashova, Dr. Okan Gurbuz, Dr. Lingtao Wu, Mr. Mike Pratt, Ms. Emma Turner, Dr. Vikash Gayah, Dr. Ilgin Guler, Dr. Rebecca Sanders, Dr. Jessica Schoner, and Mr. Brian Almdale
+**NCHRP Project 17-102 Safety Performance for Active Transportation Modes Using Exposure Models**
 
 **Summary**
 
@@ -10,8 +8,8 @@ This documentation presents the datasets and source code developed as part of th
 
 This repository contains source scripts and data for developing the models.
 
-- **scripts/**: Contains the analysis scripts for modeling.
-- **data/**: Contains the datasets. Raw_Data_and_Dictionary includes raw data along with data dictionary; Modeling_Data includes data used by the modeling scripts.
+- **scripts**: Contains the analysis scripts for modeling.
+- **data**: Contains the datasets. Raw_Data_and_Dictionary includes raw data along with data dictionary; Modeling_Data includes data used by the modeling scripts.
 
 **Usage**
 
